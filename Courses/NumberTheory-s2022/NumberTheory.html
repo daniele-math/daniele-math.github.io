@@ -1,0 +1,534 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Number Theory and Cryptography</title>
+  <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="style/accordian.pack.js"></script>
+</head>
+
+<body onload="new Accordian('basic-accordian',5,'header_highlight');">
+  <div id="logo"><h1>Number Theory &amp Cryp</h1></div>
+  <div id="basic-accordian" >
+    <div id="test-header" class="accordion_headings header_highlight">Home</div>
+    <div id="test-content">
+      <div class="accordion_child">
+        <h3>Course</h3>
+   
+        <p>Number Theory and Cryptography - Math UN3020.<br>Spring 2022.<br>Columbia University.</p>
+
+
+        <h3>Lectures</h3>
+
+        <p>Classroom: Room 312 Mathematics.<br>
+        During the first two weeks of classes, the lectures will be online via
+Zoom. The Zoom link for the online lectures will be shared on Courseworks.<br>
+        Mo, We 10:10am-11:25am.</p>
+
+        <h3>Instructor</h3>
+        <p>Name: <a href="http://www.math.columbia.edu/~alessandrini">Daniele Alessandrini</a>.<br>
+        Contact: <a href="mailto:daniele.alessandrini@gmail.com">daniele.alessandrini@gmail.com</a>.<br>
+        Office: 624 Mathematics. </p>
+
+        <p>Office hours: Tentative schedule: Mo 11:30am-12:30pm<!-- Room 507 Mathematics-->, We 9am-10am<!-- Room 622 Mathematics-->. The office hours will be in Room 622 Mathematics. <br>
+        <!--NOTE: Sometimes it happens that there are too many students at the office hours, and it is not possible to stay in my office. In this case, we will go to room 528 Mathematics. If I am not in my office during office hours, try to look for me in 528. Notice that this is not the Math Lounge, we will go to a normal classroom.-->
+        </p>
+
+        <h3> Help Room</h3>
+
+        <p>The Help Room is a place for students to seek assistance with material that comes up in the course. The room is staffed by graduate students and undergraduate teaching assistants. <!--During the Fall 2020 the Department is organizing virtual Help Rooms. Our TAs More information will be avaiable soon.--> The relevant Help Room for this course is at 406 Mathematics. You can go to the Help Room at any time when it is open, see <a href="http://www.math.columbia.edu/general-information/help-rooms/502-milstein/">here</a> for the schedule.  </p> 
+
+        <h3>TAs</h3>
+
+	<p>The TAs grade the assignments and can answer questions from students. You can ask them questions by email, and they serve in the Help Room at 406 Mathematics, where you can meet them to ask your questions. <!--Their Help Room schedule will be published here as soon as it is available. You can find their email addresses on Courseworks at the Syllabus page.--></p>
+
+	<table>
+        <tr>
+	<th>Name</th>
+	<th>Help Room Schedule</th>
+	</tr>
+	<tr>
+	<td>Jingbo Wan</td>
+	<td>Thu 9am-12pm</td>
+	</tr>
+	<tr>
+	<td>Haodong Yao</td>
+        <td>Mon 5-8pm</td>
+	</tr>
+	<tr>
+	<td>Lori Leu</td>
+	<td>Wed 2-4pm</td>
+	</tr>
+	<tr>
+	<td>Ahmed Medhat Shaaban</td>
+	<td>Mon 4-6pm</td>
+	</tr>
+	</table> 
+<!--<p>Yang An, email <a href="mailto:alanmilleran@gmail.com">alanmilleran@gmail.com</a>, Help Room Friday, 9am-12am. </p>
+        <p>Michelle Chen, email <a href="mailto:xc2413@columbia.edu">xc2413@columbia.edu</a>, Help Room Monday, 12pm-2pm. </p>             
+        <p>Lori Leu, email <a href="mailto:ll3256@columbia.edu">ll3256@columbia.edu</a>, Help Room Wednesday, 1pm-3pm. </p> -->
+
+
+
+        <h3>Syllabus</h3>
+
+        <p>The <a href="Syllabus.pdf">Syllabus</a> for this course.</p>        
+
+      </div>
+    </div>
+    <div id="test1-header" class="accordion_headings">Content</div>
+    <div id="test1-content">
+      <div class="accordion_child">
+
+        
+
+        <h3>Required text</h3>
+        <p>There is no required text. We will mainly follow the notes by Gordan Savin: <a href="https://www.math.utah.edu/~savin/book18.pdf">Numbers, Groups
+and Cryptography</a>. They are available online.</p>
+
+        <h3>Course Outline</h3>
+        
+        <p> This is a course in elementary number theory. We will present some applications to cryptography to motivate the theory. Main topics: Prime numbers and factorization, congruences and modular arithmetic, primitive roots, quadratic residues and quadratic reciprocity. Planned applications to cryptography include RSA encryption algorithm, Diffie-Hellmann key exchange, Miller-Rabin primality test.  
+
+<!--        In this course we will describe some basic ideas and techniques that lie at the foundation
+of all pure and applied mathematics. We will discuss about functions and their limits, dervatives and
+integrals. We will focus on their meaning, significance, applications and methods of computation. We will
+use the first six chapters of the course textbook (Calculus, Early Transcendentals, by Stewart).</p>
+
+        <ol>
+          <li> Functions (Chapter 1). <br>
+            <ul>
+              <li>Polynomials and rational functions.</li>
+              <li>Roots.</li>
+              <li>Exponential and logarithm.</li>
+              <li>Trigonometric functions.</li>
+            </ul>
+          </li>
+          <li> Limits (Chapter 2). <br>
+            <ul>
+              <li>Computation of limits.</li>
+              <li>Continuous functions.</li>
+              <li>Increasing and decreasing functions.</li>
+            </ul>
+          </li>
+          <li> Derivatives. <br>
+            <ul>
+              <li>Introduction to derivatives (Chapter 2). </li>
+              <li>Differentiation rules (Chapter 3). </li>
+              <li>Maxima and minima (Chapter 4). </li>
+              <li>Concavity (Chapter 4). </li>
+            </ul>          
+          </li>
+          <li> Integrals. <br>
+            <ul>
+              <li>Computation of integrals (Chapter 5). </li>
+              <li>Applications of integrals (Chapter 6). </li>
+            </ul>
+          </li>
+        </ol>-->
+
+
+       <h3>Lectures</h3>
+        
+        <table>
+        <tr>
+        <th>Date</th>
+        <th>No</th>
+        <th>Topic</th>
+        <th>Textbook Reference</th>
+        </tr>
+        <tr>
+        <td>22/01/19</td>
+        <td>01</td>
+        <td>Introduction. Numbers, operations, groups and rings. </td>
+        <td>Section 2.1, 3.1. </td> 
+        </tr>
+        <tr>
+        <td>22/01/24</td>
+        <td>02</td>
+        <td>Rings and Fields </td>
+        <td>Section 3.1. </td> 
+        </tr>
+        <tr>
+        <td>22/01/26</td>
+        <td>03</td>
+        <td>Mathematical Induction. Divisibility. </td>
+        <td>n/a</td> 
+        </tr>
+        <tr>
+        <td>22/01/31</td>
+        <td>04</td>
+        <td>Euclidean algorithm. </td>
+        <td>Sec. 1.1. </td> 
+        </tr>
+        <tr>
+        <td>22/02/02</td>
+        <td>05</td>
+        <td>B&eacute;zout's Identity, Euclid's Lemma, Diophantine Equations.</td>
+        <td>Sec. 1.2. </td> 
+        </tr>
+        <tr>
+        <td>22/02/07</td>
+        <td>06</td>
+        <td>Prime numbers. </td>
+        <td>Sec. 1.3. </td> 
+        </tr>
+        <tr>
+        <td>22/02/09</td>
+        <td>07</td>
+        <td>Prime factorization. Totient Function. Congruences. </td>
+        <td>Section 1.3, 2.2. </td> 
+        </tr>
+        <tr>
+        <td>22/02/14</td>
+        <td>08</td>
+        <td>Infinitude of primes. Modular arithmetic. </td>
+        <td>Section 4.1, 2.3. </td> 
+        </tr>
+        <tr>
+        <td>22/02/16</td>
+        <td>09</td>
+        <td>Zero-divisors and invertibility modulo n. Some cryptography. </td>
+        <td>Section 2.3. </td> 
+        </tr>
+        <tr>
+        <td>22/02/21</td>
+        <td>10</td>
+        <td>Some cryptography. Linear Congruences. </td>
+        <td>Section 2.5.</td> 
+        </tr>
+        <tr>
+        <td>22/02/23</td>
+        <td>11</td>
+        <td>Chinese Remainder Theorem. Secret Sharing. </td>
+        <td>Section 2.5. </td> 
+        </tr>
+        <tr>
+        <td>22/02/28</td>
+        <td>12</td>
+        <td>Secret Sharing. Totient Function. Order of an element. </td>
+        <td>Section 2.4, 2.5. </td> 
+        </tr>
+        <tr>
+        <td>22/03/02</td>
+        <td>13</td>
+        <td>Lagrange's Theorem. Euler's Theorem. Public Key Cryptography. </td>
+        <td>Section 2.4. </td> 
+        </tr>
+        <tr>
+        <td>22/03/07</td>
+        <td>14</td>
+        <td>RSA algorithm. </td>
+        <td>Section 10.2.</td> 
+        </tr>
+        <tr>
+        <td>22/03/09</td>
+        <td></td>
+        <td>Midterm.</td>
+        <td></td> 
+        </tr>
+        <tr>
+        <td>22/03/14</td>
+        <td></td>
+        <td>Spring Break.</td>
+        <td></td> 
+        </tr>
+        <tr>
+        <td>22/03/16</td>
+        <td></td>
+        <td>Spring Break.</td>
+        <td></td> 
+        </tr>
+        <tr>
+        <td>22/03/21</td>
+        <td>15</td>
+        <td>RSA example. Polynomials. </td>
+        <td>Section 10.2. </td> 
+        </tr>
+        <tr>
+        <td>22/03/23</td>
+        <td>16</td>
+        <td>Polynomial division. Roots. </td>
+        <td> </td> 
+        </tr>
+        <tr>
+        <td>22/03/28</td>
+        <td>17</td>
+        <td>Property of the totient funcition, Roots of unity.</td>
+        <td>Section 5.2, 5.3. </td> 
+        </tr>
+        <tr>
+        <td>22/03/30</td>
+        <td>18</td>
+        <td>Roots of unity, Discrete logarithm. </td>
+        <td>Section 5.3, 5.4. </td> 
+        </tr>
+        <tr>
+        <td>22/04/04</td>
+        <td>19</td>
+        <td>Diffie Hellmann and ElGamal algorithms.</td>
+        <td>Section 10.1, 10.3. </td> 
+        </tr>
+        <tr>
+        <td>22/04/06</td>
+        <td>20</td>
+        <td>Quadratic Residues. Legendre Symbols. </td>
+        <td>Section 6.1</td> 
+        </tr>
+        <tr>
+        <td>22/04/11</td>
+        <td>21</td>
+        <td>Quadratic Reciprocity.</td>
+        <td>Section 6.3, 6.4. </td> 
+        </tr>
+        <tr>
+        <td>22/04/13</td>
+        <td>22</td>
+        <td>Quadratic Residues modulo n. Jacobi Symbols. Goldwasser-Micali Cryptosystem.</td>
+        <td>n/a</td> 
+        </tr>
+        <tr>
+        <td>22/04/18</td>
+        <td>23</td>
+        <td>Example of Goldwasser-Micali. Miller-Rabin Primality Test. </td>
+        <td>Section 11.1. </td> 
+        </tr>
+        <tr>
+        <td>22/04/20</td>
+        <td>24</td>
+        <td>Miller-Rabin Primality Test and Quadratic Sieve. </td>
+        <td>Section 11.1, 11.4. </td> 
+        </tr>
+        <tr>
+        <td>22/04/25</td>
+        <td>25</td>
+        <td>Quadratic Sieve and Shor's algorithm. </td>
+        <td>Section 11.4. </td> 
+        </tr>
+        <tr>
+        <td>22/04/27</td>
+        <td>26</td>
+        <td>Shor's algorithm and random number generators. </td>
+        <td> </td> 
+        </tr>
+        <tr>
+        <td>22/05/02</td>
+        <td>27</td>
+        <td>Review Lecture </td>
+        <td> </td> 
+        </tr>
+        </table> 
+      </div>
+    </div>
+    <div id="test2-header" class="accordion_headings">Prerequisite</div>
+    <div id="test2-content">
+      <div class="accordion_child">
+
+        <p>One year of Calculus; you will also need some familiarity with proofs or a willingness to learn. </p> 
+
+<!--        <h3>Resources</h3>
+        
+        <p>If your pre-calculus is weak, the textbook has some review material in Appendix A and B. Moreover, the section "Principles of problem solving", at the end of Chapter 1 can also be helpful.</p>
+        
+        <p>You can also consider the book Precalculus, Mathematics for calculus, by Stewart, Redlin, Watson. This book is not required, and not important for most students. It is useful only if you have gaps in your background knowledge. </p>
+        
+        <p>Also, you can consider the website <a href="https://www.khanacademy.org/">Khan Academy</a>, it has plenty of useful instruction material freely available. </p>-->
+        
+      </div>
+    </div>
+    <div id="test3-header" class="accordion_headings">Homework</div>
+    <div id="test3-content">
+      <div class="accordion_child">
+
+        <h3>Homework sheets</h3>
+
+        <p>The homework will be published online in form of homework sheets every Wednesday night. You have 6 days time to submit the written solutions.</p>
+
+        <table>
+        <tr>
+	<th>Date</th>
+	<th>Number</th>
+	<th>Topic</th>
+        <th>Submit by</th>
+        <th>Grader</th>
+	</tr>
+	<tr>
+	<td>22/01/26</td>
+	<td>01</td>
+	<td><a href="Exercises/Homework01.pdf">Numbers</a></td>
+        <td>21/02/01</td>
+        <td>Haodong</td>
+	</tr>
+	<tr>
+	<td>22/02/02</td>
+	<td>02</td> 
+	<td><a href="Exercises/Homework02.pdf">Divisors</a></td>
+        <td>22/02/08</td>
+        <td>Lori</td>
+	</tr>
+	<tr>
+	<td>22/02/09</td>
+	<td>03</td>
+	<td><a href="Exercises/Homework03.pdf">Primes</a></td>
+        <td>22/02/15</td>
+        <td>Jingbo</td>
+	</tr>
+	<tr>
+	<td>22/02/16</td>
+	<td>04</td>
+	<td><a href="Exercises/Homework04.pdf">Modular Arithmetic</a></td>
+        <td>22/02/22</td>
+        <td>Ahmed</td>
+	</tr>
+	<tr>
+	<td>22/02/23</td>
+	<td>05</td>
+	<td><a href="Exercises/Homework05.pdf">Linear Congruences</a></td>
+        <td>22/03/01</td>
+        <td>Lori</td>
+	</tr>
+	<tr>
+	<td>22/03/02</td>
+	<td>06</td>
+	<td><a href="Exercises/Homework06.pdf">Lagrange's Theorem</a></td>
+        <td>22/03/08</td>
+        <td>Ahmed</td>
+	</tr>
+	<tr>
+	<td>22/03/09</td>
+	<td>07</td>
+	<td><a href="Exercises/Homework07.pdf">Binomial Congruences</a></td>
+        <td>22/03/22</td>
+        <td>Lori</td>
+	</tr>
+	<tr>
+	<td>22/03/23</td>
+	<td>08</td>
+	<td><a href="Exercises/Homework08.pdf">Polynomial division</a></td>
+        <td>22/03/29</td>
+        <td>Haodong</td>
+	</tr>
+	<tr>
+	<td>22/03/30</td>
+	<td>09</td>
+	<td><a href="Exercises/Homework09.pdf">Roots of unity</a></td>
+        <td>22/04/05</td>
+        <td>Jingbo</td>
+	</tr>
+	<tr>
+	<td>22/04/06</td>
+	<td>10</td>
+	<td><a href="Exercises/Homework10.pdf">Quadratic Residues</a></td>
+        <td>22/04/12</td>
+        <td>Haodong</td>
+	</tr>
+	<tr>
+	<td>22/04/13</td>
+	<td>11</td>
+	<td><a href="Exercises/Homework11.pdf">Quadratic Reciprocity</a></td>
+        <td>22/04/19</td>
+        <td>Jingbo</td>
+	</tr>
+	<tr>
+	<td>22/04/20</td>
+	<td>12</td>
+	<td><a href="Exercises/Homework12.pdf">Primality test and Factorization</a></td>
+        <td>22/04/26</td>
+        <td>Ahmed</td>
+	</tr>
+        <tr>
+	<td>22/04/27</td>
+	<td>13</td>
+	<td><a href="Exercises/Homework13.pdf">Factorization and review</a></td>
+        <td>not graded</td>
+        <td></td>
+	</tr>
+        <tr>
+	<td>22/05/07</td>
+	<td></td>
+	<td><a href="Exercises/MockExam.pdf">Mock Exam</a></td>
+        <td>not graded</td>
+        <td></td>
+	</tr>   
+	</table>  
+
+
+
+
+        <h3>Submission</h3>
+	<p> Written assignments will be due in the night between Tuesday and Wednesday, more precisely on Wednesday early morning at 5:00am. Submission is online, via Courseworks, at the Gradescope page.  
+	<!--in one of the collection boxes on the fourth floor of the Mathematics Hall, beginning on September 18. Assignments will not be accepted in electronic form; only a physical copy in the collection box will be accepted.--> 
+	<!--We encourage collaboration on assignments, but all solutions must be written up by you alone in your own words.-->
+	</p>
+			
+	<h3>Late hand in</h3>
+			
+	<p>We will accept late homework, but we deduct 10% of the points for every day of lateness. <!--If you submit your assignment after Wednesday 11pm, please make a scan or a good quality picture of it. AFTER you have put your assignment in the collection box, please send an email to all the three TAs to notify them that you have handed-in a late assignment. Please, include the scan or picture of your assignment in the email, in case the TA is not able to get your solutions from the collection box at that time. Notice that handing-in a physical copy of the assignment in the collection box is still required, and must be done BEFORE sending the email.--></p>
+
+       </div>
+    </div>
+    <div id="test4-header" class="accordion_headings">Exams</div>
+    <div id="test4-content">
+      <div class="accordion_child">
+        
+        <h3>Midterm exam</h3>
+
+        <p>There will be one midterm exam on Wednesday March 9th during the usual class time.</p>
+        
+<!--        <p>Wednesday October 2nd:<br> 
+           Exam - <a href="Exercises/Midterm1-001.pdf">Section 001</a> - <a href="Exercises/Midterm1-002.pdf">Section 002</a><br>
+           Answers - <a href="Exercises/AnswersMidterm1-001.pdf">Section 001</a> - <a href="Exercises/AnswersMidterm1-002.pdf"> Section 002</a> 
+        </p>  -->
+
+        <h3>Final exam</h3>
+ 
+        <p><!--Final exam: Wednesday December 22nd, 9am–Noon. The exam will be online. Please, check the <a href="RulesForOnlineExams.pdf">rules for on-line exams</a>.
+        Projected schedule for the final exam:  -->
+        The final exam will be on Wednesday May 11th, 9am–
+Noon, in Room 312 Mathematics. <!--The date will be confirmed by the University.-->
+        </p>
+      
+        <h3>Exam dates</h3>
+
+        <p><!--The midterms and final exams will be online. Please, check the <a href="RulesOnlineExams.pdf">rules for on-line exams</a>.--> 
+         You must plan to take the midterm and final exams at the scheduled time, so please make
+your plans accordingly. Besides students with disabilities having prior arrangements with DS or CARDS, the
+only exceptions will be for those with an incapacitating illness, a serious family emergency, or situations
+of comparable gravity. In this case you will need to ask your advising dean to send me a note to confirm your situation of need. If your motivation seems reasonable, I will use the grade of your final exam as grade for your midterm. For the final exam, we will organize a make-up exam. Incompletes can be granted only by your advising dean and only in the
+circumstances mentioned above. </p>
+
+         <h3>Academic dishonesty</h3>
+ 
+         <p>Anyone guilty of academic dishonesty, such as cheating on an exam or
+helping someone else to cheat, will fail the course and faces further academic discipline. </p>
+
+<!--        <h3>The day of the exam</h3>
+
+        <ul>
+        <li>For the midterms, we have very litle time, hence we have to try and start the exam as soon as possible (ideally at 10:10am or 2:40pm sharp). So please, try to enter in the room some minutes before this time, sit quickly, and put all the non-relevant objects inside your backpack. </li>
+        <li>You must leave an empty seat between every two students. We will use the seats in the first column from the left (from the point of view of the students), then the third column, the fifth, and so on. Please, don't sit in an even column. </li>
+        <li>Bring your University Id with you, I will check your identity during the exam. If for some reason you don't have a University Id, please let me know before the exam, and bring some other id with photo. </li>
+        <li>Bring two black or blue pens. Don't write in colors different from black or blue, we need the other colors for grading. It is not possible to ask for a pen to your colleagues during the exam. </li>
+        <li>You can bring a sheet of paper with handwritten notes. The sheet can be two sided, but it cannot be printed. </li>
+        <li>All electronic devices must be switched off and put into your backpack before entering in the exam room. You cannot touch your phone during the entire duration of the exam.</li>
+        <li>During the exam, you have with you only your two pens, your sheet with handwritten notes and your University Id. All the other objects are in your backpack. </li>
+        <li>At the beginning of the exam, I will distribute the questions. You will write your answers in the sheets of paper where the questions are printed. If you need additional paper to write your answer or your computations, I will give it to you. You cannot use your own paper. </li>
+        <li>When you receive the questions, write your name and Columbia Id on the first page. Don't turn the pages until I finish to distribute the questions to everybody.</li>
+        <li>It will not be possible to leave the room for using the restrooms in the first and in the last 20 minutes of the exam. In the middle part of the exam, it will be possible to use the restrooms, but please ask for permission to leave, and wait for your turn, because there can be only one student out at a time.</li>
+        </ul>    -->
+
+
+        <h3>Grading</h3>
+
+        <p>Homework 15%, midterms 35%, final 50%.</p>
+
+      </div>
+    </div>
+
+  <div id="footer">
+    <p>This page was last modified on May 7, 2022<BR>
+       Copyright &copy; Daniele Alessandrini 2022 | <a href="http://validator.w3.org/check?uri=referer">HTML 5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">Simple web templates by HTML5</a> | <a href="http://dezinerfolio.com">AJAX by DezinerFolio</a></p>
+  </div>
+</body>
+</html>
